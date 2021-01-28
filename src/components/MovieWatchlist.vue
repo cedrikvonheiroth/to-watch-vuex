@@ -27,7 +27,7 @@ export default {
         border: 1px solid rgb(255, 255, 255);
         border-radius: 5px;
         /* height: 50vh; */
-        /* width: 100vw; */
+        width: 55vw;
         margin: 3rem auto;
         flex-direction: column;
     }

@@ -24,7 +24,9 @@ export default {
 <style scoped>
   div.home {
     display: flex;
+    flex-direction: column;
     background-color: rgb(5, 5, 32);
+    min-height: 100vh;
   }
 
   div.wrapper {

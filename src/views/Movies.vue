@@ -1,3 +1,4 @@
+// The ADD MOVIES-page
 <template>
   <div class="movies">
     <div class="wrapper">
@@ -22,8 +23,6 @@
     
       <MovieWatchlist />
     </div>
-    
-
   </div>
 </template>
 
@@ -67,7 +66,7 @@ export default {
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
-    width: 570px;
+    width: 55vw;
   }
 
   form input, textarea, label {
@@ -82,6 +81,7 @@ export default {
   div.movies {
     display: flex;
     background-color: rgb(5, 5, 32);
+    min-height: 100vh;
   }
 
   div.wrapper {
@@ -98,6 +98,7 @@ export default {
   div.wrapper p {
     padding: 1rem;
     line-height: 2;
+    text-align: center;
   }
 
   
