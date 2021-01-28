@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Navbar from '../components/Navbar.vue'
 import Movies from '../views/Movies.vue'
+import About from '../views/About.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,12 @@ const routes = [
     path: '',
     name: 'Navbar',
     component: Navbar
+  },
+
+  {
+    path:'/about',
+    name:'About',
+    component: About
   }
 ]
 

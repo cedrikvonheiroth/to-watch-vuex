@@ -1,15 +1,23 @@
 <template>
   <div class="home">
     <div class="wrapper">
-      <h1>What is this?</h1>
-      <p>TO WATCH is the number 1 app for adding movies and series to your own watchlist. You don't need any account, it's totally free and super easy to use! Just add your movies and series to your list now, and watch them later whenever you want.</p>
+      <h1>Home</h1>
+      <p>This is your current watchlist. Want to add movies? Go to Add Movies!</p>
     </div>
 
-
+  <MovieWatchlist />
   </div>
 </template>
 
 <script>
+import MovieWatchlist from '../components/MovieWatchlist.vue'
+
+export default {
+  components: {
+    MovieWatchlist
+  }
+
+}
 
 </script>
 
@@ -17,7 +25,6 @@
   div.home {
     display: flex;
     background-color: rgb(5, 5, 32);
-    height: 100vh;
   }
 
   div.wrapper {

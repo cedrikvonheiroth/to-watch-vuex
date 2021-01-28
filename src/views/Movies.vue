@@ -4,29 +4,28 @@
       <h1>Movies</h1>
       <p>Let's add some movies to your watchlist! </p>
 
-    <form @submit.prevent="addMovie">
-      <label for="movie-title">Title: </label>
-      <input v-model="movie" type="text" id="movie-title" placeholder="The title of the movie">
+      <form @submit.prevent="addMovie">
+        <label for="movie-title">Title: </label>
+        <input v-model="movie" type="text" id="movie-title" placeholder="The title of the movie">
 
-      <br>
-      <label for="comment">Comment: </label>
-      <textarea v-model="comment" name="" id="comment" cols="100" rows="10" placeholder="Please explain in a few words why the movie is a must see"></textarea>
+        <br>
+        <label for="comment">Comment: </label>
+        <textarea v-model="comment" name="" id="comment" cols="100" rows="10" placeholder="Please explain in a few words why the movie is a must see"></textarea>
 
-      <br>
-      <label for="recommended by">Recommended by: </label>
-      <input v-model="recommendedBy" type="text" id="recommended-by" placeholder="Let everybody know who is recommending this movie">
+        <br>
+        <label for="recommended by">Recommended by: </label>
+        <input v-model="recommendedBy" type="text" id="recommended-by" placeholder="Let everybody know who is recommending this movie">
 
-      <br>
-      <button>Add to watchlist</button>
-    </form>
+        <br>
+        <button>Add to watchlist</button>
+      </form>
     
-    <MovieWatchlist />
+      <MovieWatchlist />
     </div>
     
 
   </div>
 </template>
-
 
 
 <script>
@@ -59,8 +58,6 @@ export default {
   }
 
 </script>
-
-
 
 <style scoped>
   form {

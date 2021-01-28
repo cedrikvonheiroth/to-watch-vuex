@@ -4,7 +4,9 @@
       
       <div class="link-wrapper">      
         <router-link to="/">Home</router-link>
-        <router-link to="/movies">Movies</router-link>
+        <router-link to="/movies">Add Movies</router-link>
+        <router-link to="/about">About</router-link>
+
       </div>
 
     </div>
