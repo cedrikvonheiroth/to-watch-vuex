@@ -39,7 +39,10 @@ export default new Vuex.Store({
   mutations: {
     addMovie(state, movie){
       state.movies.unshift(movie)
-    }
+    },
+    removeMovie(state, movieToRemove) {
+      state.movies = state.movies.filter((movie) => movieToRemove !== movie);
+    },
   },
   
   actions: {
