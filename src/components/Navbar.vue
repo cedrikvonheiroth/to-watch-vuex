@@ -1,7 +1,10 @@
 <template>
   <div class="navbar">
       <h1>To watch</h1>
-      
+      <div class="logo-wrapper">
+          <img src="@/assets/to-watch-logo.png" alt="">
+      </div>
+    
       <div class="link-wrapper">      
         <router-link to="/">Home</router-link>
         <router-link to="/movies">Add Movies</router-link>
@@ -40,8 +43,22 @@ export default {
         text-decoration: none;
     }
 
+    div.navbar a:hover {
+        color: rgb(202, 56, 19);
+    }
+
     h1 {
         text-transform: uppercase;
     }
+
+    div.logo-wrapper {
+        padding: 0.5rem;
+        width: 45px;
+    }
+
+    img {
+        width: 100%;
+    }
+
 
 </style>

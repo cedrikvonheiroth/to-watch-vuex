@@ -44,6 +44,7 @@ export default {
   div.wrapper p {
     padding: 1rem;
     line-height: 2;
+    text-align: center;
   }
 
 </style>
