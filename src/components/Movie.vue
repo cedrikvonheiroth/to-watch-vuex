@@ -1,10 +1,15 @@
 <template>
   <div class="movie-card">
-      <h3>{{ movie.title }}</h3>
+      <div class="flex-container">
+        <h3>{{ movie.title }}</h3>
+        <button class="delete-btn" @click="deleteMovie">Delete</button>
+      </div>
       <p>"{{ movie.comment }}"</p>
-      <p>Recommended by: {{ movie.recommendedBy }}</p>
-      <p>{{ movie.timestamp | formatDate }}   </p>
-      <button class="delete-btn" @click="deleteMovie">Delete</button>
+
+      <div class="timestamp-wrapper">
+      <p class="recommended-by">Recommended by: {{ movie.recommendedBy }}</p>
+        <p class="timestamp">{{ movie.timestamp | formatDate }}</p>
+      </div>
   </div>
 </template>
 
@@ -25,9 +30,14 @@ export default {
         border: 1px solid rgb(202, 56, 19);
         border-radius: 5px;
         margin: 1.5rem;
-        padding: 1.5rem;
+        padding: 0.5rem;
         display: flex;
         flex-direction: column;
+    }
+
+    div.flex-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     div.movie-card h3 {
@@ -46,6 +56,19 @@ export default {
         border-radius: 3px;
         cursor: pointer;
         width: 50px;
+    }
+
+    div.timestamp-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p.timestamp {
+        font-size: 0.8rem;
+    }
+
+    p.recommended-by {
+        font-size: 0.8rem;
     }
 
 </style>

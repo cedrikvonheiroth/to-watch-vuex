@@ -24,11 +24,11 @@ export default {
     div.movie-watchlist {
         display: flex;
         color: white;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.5);
         border-radius: 5px;
         /* height: 50vh; */
         width: 55vw;
-        margin: 3rem auto;
+        margin: 2rem auto;
         flex-direction: column;
     }
 </style>

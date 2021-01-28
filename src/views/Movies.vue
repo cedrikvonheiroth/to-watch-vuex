@@ -5,7 +5,7 @@
       <h1>Movies</h1>
       <p>Let's add some movies to your watchlist! </p>
 
-      <form @submit.prevent="addMovie">
+      <form @submit.prevent="addMovie" >
         <label for="movie-title">Title: </label>
         <input v-model="movie" type="text" id="movie-title" placeholder="The title of the movie">
 
@@ -18,7 +18,9 @@
         <input v-model="recommendedBy" type="text" id="recommended-by" placeholder="Let everybody know who is recommending this movie">
 
         <br>
+        
         <button>Add to watchlist</button>
+        
       </form>
     
       <MovieWatchlist />
@@ -48,9 +50,10 @@ export default {
         title: this.movie,
         comment: this.comment,
         recommendedBy: this.recommendedBy,
-        timestamp: Date.now()
+        timestamp: Date.now(),
       }
 
+      this.$router.push('/');
       this.$store.commit('addMovie', newMovie); 
       }
     }
@@ -59,8 +62,17 @@ export default {
 </script>
 
 <style scoped>
+  div.wrapper {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+
   form {
-    border: 1px dashed white;
+    border: 1px dashed rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     padding: 1rem;
     margin: 1rem auto;
@@ -84,11 +96,6 @@ export default {
     min-height: 100vh;
   }
 
-  div.wrapper {
-    width: 50vw;
-    margin: 1rem auto;
-    color: white;
-  }
 
   div.wrapper h1 {
     text-align: center;
