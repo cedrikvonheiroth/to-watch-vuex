@@ -92,7 +92,6 @@ export default {
 
   div.movies {
     display: flex;
-    /* background-color: rgb(5, 5, 32); */
     background-image: linear-gradient(to bottom right, rgb(9, 9, 49), rgb(20, 20, 20));
     min-height: 100vh;
   }
@@ -108,7 +107,4 @@ export default {
     line-height: 2;
     text-align: center;
   }
-
-  
-
 </style>
