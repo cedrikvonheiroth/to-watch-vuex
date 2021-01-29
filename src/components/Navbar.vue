@@ -29,10 +29,12 @@ export default {
 
 <style scoped>
     div.navbar {
-        padding: 1rem;
+        padding: 1rem 1rem;
         display: flex;
         background-color: black;
         color: rgb(202, 56, 19);
+        max-width: 100vw;
+
     }
 
     div.navbar a {

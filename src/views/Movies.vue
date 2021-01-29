@@ -64,7 +64,7 @@ export default {
 <style scoped>
   div.wrapper {
     width: 50vw;
-    margin: auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +92,8 @@ export default {
 
   div.movies {
     display: flex;
-    background-color: rgb(5, 5, 32);
+    /* background-color: rgb(5, 5, 32); */
+    background-image: linear-gradient(to bottom right, rgb(9, 9, 49), rgb(20, 20, 20));
     min-height: 100vh;
   }
 

@@ -25,7 +25,8 @@ export default {
   div.home {
     display: flex;
     flex-direction: column;
-    background-color: rgb(5, 5, 32);
+    /* background-color: rgb(5, 5, 32); */
+    background-image: linear-gradient(to bottom right, rgb(9, 9, 49), rgb(20, 20, 20));
     min-height: 100vh;
   }
 

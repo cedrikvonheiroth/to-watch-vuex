@@ -1,6 +1,9 @@
 <template>
   <div id="app">
+
+    <div class="navbar">
     <Navbar />
+    </div>
     <!-- <Home />
     <Movies /> -->
     <router-view/>
@@ -39,6 +42,11 @@ export default {
   margin: 0;
   padding: 0;
   font-family: Poppins;
+}
+
+div.navbar {
+  position: sticky;
+  top: 0px;
 }
 
 </style>
