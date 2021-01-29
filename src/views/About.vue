@@ -45,18 +45,41 @@ export default {
         font-size: 2.5rem;
     }
 
+    /* div.wrapper h2:hover {
+        color: rgb(202, 56, 19);
+        transform: translate(1.5);
+    } */
+
     div.wrapper p {
         padding: 1rem;
         line-height: 2;
     }
 
     div.img-wrapper {
-        width: 10vw;
-        margin: 0rem auto;
+        width: 15vw;
+        margin: 1rem auto;
+        position: relative;
+        animation-name: popcorn;
+        animation-duration: 20s;
     }
 
     div.img-wrapper img {
         width: 100%;
+    }
+
+    @keyframes popcorn {
+        0% {left: 0px;}
+        10% {left: 50px;}
+        20% {left: -50px;}
+        30% {left: 50px;}
+        40% {left: -50px;}
+        50% {left: 50px;}
+        60% {left: -50px;}
+        70% {left: 50px;}
+        80% {left: -50px;}
+        90% {left: 50px;}
+        100% {left: 0px;}
+        
     }
 
 </style>
